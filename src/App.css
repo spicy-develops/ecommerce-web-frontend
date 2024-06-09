@@ -10,6 +10,9 @@
   --color-searchIcon: lightblue;
   --color-headerLowerStrip: #00a86b;
   --color-footer: #3f704d;
+  --color-mainBannerHeading: orangered;
+  --color-mainBannerPrice: grey;
+  --color-homePageBackground: #f5f5f7;
 }
 
 body {
@@ -38,6 +41,19 @@ a {
   gap: 30px
 }
 
+.button{
+  background-color: var(--color-headerLowerStrip);
+  color: white;
+  font-size: 14px;
+  padding: 13px 33px;
+  border-radius: 15px;
+}
+
+.button:hover {
+  background-color: var(--color-searchIcon);
+  color: black;
+}
+
 /* Header Styling */
 .header-top-strip {
   border-bottom: 1px solid var(--color-headerTopStripBorder);
@@ -61,8 +77,8 @@ a {
   background-color: var(--color-headerLowerStrip);
 }
 
-.header-bottom .menu-links a, 
-.header-bottom .dropdown button{
+.header-bottom .menu-links a,
+.header-bottom .dropdown button {
   color: white;
   font-size: 14px;
   line-height: 18px;
@@ -71,40 +87,111 @@ a {
   text-transform: uppercase;
 }
 
-.header-bottom .dropdown button:focus{
- box-shadow: none;
+.header-bottom .dropdown button:focus {
+  box-shadow: none;
 }
 
-.header-bottom .dropdown-menu{
+.header-bottom .dropdown-menu {
   background-color: var(--color-headerTopStrip);
   width: 100%;
   transform: translate3d(0px, 57px, 0px) !important;
 }
 
-.header-bottom .dropdown-item:hover{
- background-color: transparent;
- color: var(--color-searchIcon) !important;
+.header-bottom .dropdown-item:hover {
+  background-color: transparent;
+  color: var(--color-searchIcon) !important;
 }
+
 .header-bottom .dropdown-item {
   padding: 20px;
   margin-bottom: 3px;
   border-bottom: 1px solid var(--color-headerTopStripBorder);
 }
+
 /* Header Styling Ends Here */
 
 
 /* Footer Styling */
-footer{
+footer {
   background-color: var(--color-footer);
 }
 
-footer:not(:first-child){
+footer:not(:first-child) {
   border-top: 1px solid var(--color-headerTopStripBorder);
 }
 
-footer .input-group-text{
-  background-color: var(--color-headerTopStrip);
-  color: white;
+footer .input-group-text {
+  background-color: var(--color-searchIcon);
+  color: black;
   padding: 8px 17px;
 }
+
 /* Footer Styling Ends Here */
+
+
+
+/* Home Page Styling */
+.main-banner-content {
+  top: 15%;
+  left: 7%;
+}
+
+.main-banner-content h4{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-mainBannerHeading);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.main-banner-content h5{
+  font-size: 42px;
+  line-height: 54px;
+  letter-spacing: -2px;
+  font-size: 500;
+  text-transform: none;
+}
+
+.main-banner-content p{
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.4;
+  color: var(--color-mainBannerPrice);
+}
+
+.small-banner-content {
+  top: 25%;
+  left:11%;
+}
+
+.small-banner-content h4 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-mainBannerHeading);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.small-banner-content h5 {
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: -1.2px;
+  font-size: 500;
+  text-transform: none;
+}
+
+.small-banner-content p {
+  font-size: 12px;
+  line-height: 8px;
+  letter-spacing: 0.4;
+  color: var(--color-mainBannerPrice);
+}
+
+.small-banner{
+  width: 49%;
+}
+/* Home Page Styling Ends Here */
