@@ -15,6 +15,16 @@
   --color-homePageBackground: #f5f5f7;
   --color-homePageBanner2Borders: #ededed;
   --color-blogCardDate: #777777;
+  --color-productCardPrice: #1c1c1b;
+}
+
+.section-heading{
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 body {
@@ -288,3 +298,68 @@ footer .input-group-text {
   color: var(--color-blogCardDate);
 }
 /* Blog Card Ends Here */
+
+
+
+
+
+/* Product Card Styling */
+
+.product-card{
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.product-card .product-image{
+  height: 270px;
+}
+
+.product-card .product-image img{
+  object-fit: contain;
+}
+
+.product-card .product-image > img:last-child{
+  display: none;
+}
+
+.product-card:hover .product-image>img:first-child {
+  display: none;
+}
+
+.product-card:hover .product-image>img:last-child {
+  display: block;
+}
+
+.product-card:hover .action-bar{
+  right: 13px;
+}
+
+.product-card .product-details h6{
+  color: var(--color-mainBannerHeading);
+  font-size: 13px;
+}
+
+.product-card .product-details h5{
+  font-size: 15px;
+  color: black;
+
+}
+
+.product-card .product-details p{
+  font-size: 16px;
+  color: var(--color-productCardPrice);
+}
+
+.action-bar{
+  top: 10%;
+  right: -23px;
+  transition: 0.3s;
+}
+
+.wishlist-icon{
+  top: 2.5%;
+  right: 15px;
+}
+/* Product Card Styling Ends Here */
