@@ -363,3 +363,15 @@ footer .input-group-text {
   right: 15px;
 }
 /* Product Card Styling Ends Here */
+
+
+
+
+/* Special Product Card Styling */
+.special-product-card{
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* Special Product Card Styling Ends Here */
