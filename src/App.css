@@ -375,3 +375,35 @@ footer .input-group-text {
 }
 
 /* Special Product Card Styling Ends Here */
+
+
+
+
+/* Famous Card Product Styling */
+.famous-card .famous-content{
+  top: 10%;
+  left: 10%;
+}
+
+.famous-card img{
+  height: 400px;
+  border-radius: 10px;
+}
+
+.famous-content h5{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400px;
+  margin-bottom: 7px;
+}
+.famous-content h6{
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 500;
+}
+.famous-content p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+}
+/* Famous Card Styling Ends Here */
