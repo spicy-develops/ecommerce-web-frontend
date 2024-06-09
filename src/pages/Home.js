@@ -242,6 +242,7 @@ const Home = () => {
             <SpecialProductCard />
             <SpecialProductCard />
             <SpecialProductCard />
+            <SpecialProductCard />
         </div>
       </div>
       </section>
