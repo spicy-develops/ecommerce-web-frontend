@@ -56,7 +56,7 @@ const Store = () => {
                         name="formId1"
                         id="formId1"
                         placeholder="From"
-                      /> 
+                      />
                       <label htmlFor="formId1">From</label>
                     </div>
                     <div className="form-floating">
@@ -71,8 +71,8 @@ const Store = () => {
                     </div>
                   </div>
                   <h5 className="sub-title">Colors</h5>
-                    <div>
-                      <ul className='colors ps-0'>
+                  <div>
+                    <ul className='colors ps-0'>
                       <li></li>
                       <li></li>
                       <li></li>
@@ -118,8 +118,8 @@ const Store = () => {
                       <li></li>
                       <li></li>
                       <li></li>
-                      </ul>
-                    </div>
+                    </ul>
+                  </div>
                   <h5 className="sub-title">Size</h5>
                   <div>
                     <div className="form-check">
@@ -186,7 +186,35 @@ const Store = () => {
                 </div>
               </div>
             </div>
-            <div className="col-9"></div>
+            <div className="col-9">
+              <div className="filter-sort-grid mb-4 px-4">
+                <div className="d-flex justify-content-between align-items-center">
+                  <div className="d-flex align-items-center gap-10 w-50">
+                    <p className='mb-0' style={{ width: "100px" }}>Sort By:</p>
+                    <select name="" className="form-control form-select" id="">
+                      <option value="manual">Featured</option>
+                      <option value="best-selling" selected="selected">Best Selling</option>
+                      <option value="title-ascending">Alpahabetically, A-Z</option>
+                      <option value="title-descending">Alpahabetically, Z-A</option>
+                      <option value="price-ascending">Price, low to high</option>
+                      <option value="price-descending">Price, high to low</option>
+                      <option value="created-ascending">Date, old to new</option>
+                      <option value="created-descending">Date, new to old</option>
+                    </select>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="total-products mb-0">21 Products</p>
+                    <div className='d-flex gap-10 align-items-center grid'>
+                      <img src="images/gr4.svg" className='d-block img-fluid' alt="grid" />
+                      <img src="images/gr3.svg" className='d-block img-fluid' alt="grid" />
+                      <img src="images/gr2.svg" className='d-block img-fluid' alt="grid" />
+                      <img src="images/gr.svg" className='d-block img-fluid' alt="grid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
           </div>
         </div>
       </div>
