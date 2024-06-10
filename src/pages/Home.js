@@ -4,10 +4,15 @@ import Marquee from 'react-fast-marquee'
 import BlogCard from '../components/BlogCard'
 import ProductCard from '../components/ProductCard'
 import SpecialProductCard from '../components/SpecialProductCard'
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>PakZone</title>
+      </Helmet>
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
