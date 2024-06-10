@@ -1,8 +1,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import ReactStars from "react-rating-stars-component";
+import { useState } from 'react'
+import ProductCard from '../components/ProductCard'
 
 const Store = () => {
+  const [grid, setGrid] = useState(4);
   return (
     <>
       <Helmet>
@@ -205,15 +208,28 @@ const Store = () => {
                   <div className="d-flex align-items-center gap-10">
                     <p className="total-products mb-0">21 Products</p>
                     <div className='d-flex gap-10 align-items-center grid'>
-                      <img src="images/gr4.svg" className='d-block img-fluid' alt="grid" />
-                      <img src="images/gr3.svg" className='d-block img-fluid' alt="grid" />
-                      <img src="images/gr2.svg" className='d-block img-fluid' alt="grid" />
-                      <img src="images/gr.svg" className='d-block img-fluid' alt="grid" />
+                      <img onClick={() => {
+                        setGrid(3);
+                      }} src="images/gr4.svg" className='d-block img-fluid' alt="grid" />
+                      <img onClick={() => {
+                        setGrid(4);
+                      }} src="images/gr3.svg" className='d-block img-fluid' alt="grid" />
+                      <img onClick={() => {
+                        setGrid(6);
+                      }} src="images/gr2.svg" className='d-block img-fluid' alt="grid" />
+                      <img onClick={() => {
+                        setGrid(12);
+                      }} src="images/gr.svg" className='d-block img-fluid' alt="grid" />
                     </div>
                   </div>
                 </div>
               </div>
-              
+              <div className="product-list pb-5 d-flex gap-10 flex-wrap">
+                <ProductCard grid={grid}/>
+                <ProductCard grid={grid} />
+                <ProductCard grid={grid} />
+                <ProductCard grid={grid} />
+              </div>
             </div>
           </div>
         </div>
