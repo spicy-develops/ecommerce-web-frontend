@@ -297,6 +297,11 @@ footer .input-group-text {
   line-height: 22px;
   color: var(--color-blogCardDate);
 }
+
+.br-6{
+  width: 49.484%;
+
+}
 /* Blog Card Ends Here */
 
 
