@@ -48,13 +48,13 @@ const Contact = () => {
                       <li className='mb-3 d-flex align-items-center gap-10'>
                         <BiPhoneCall className='fs-5' />
                         <a href="tel:+92 3115450875">+92 3115450875</a>
-                        </li>
+                      </li>
                       <li className='mb-3 d-flex align-items-center gap-10'>
                         <AiOutlineMail className='fs-5' />
                         <a href="mailto:mmushtaq.bscs22seecs@seecs.edu.pk">mmushtaq.bscs22seecs@seecs.edu.pk</a>
-                        </li>
+                      </li>
                       <li className='mb-3 d-flex align-items-center gap-10'><BiInfoCircle className='fs-5' />
-                      <p className="mb-0">Monday - Sunday 8 AM - 10 PM</p>
+                        <p className="mb-0">Monday - Sunday 8 AM - 10 PM</p>
                       </li>
                     </ul>
                   </div>
