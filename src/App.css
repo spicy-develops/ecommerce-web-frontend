@@ -537,3 +537,41 @@ footer .input-group-text {
   background-color: darkgrey;
 }
 /* Store Page Styling Ends Here */
+
+
+
+
+/* Contact Page Styling */
+.contact-inner-wrapper{
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: white;
+  gap: 15px;
+}
+
+.contact-inner-wrapper >div{
+  width: 48%;
+}
+
+.contact-title{
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+}
+
+.contact-inner-wrapper form .form-control{
+  background-color: var(--color-homePageBackground);
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.contact-inner-wrapper ul{
+  list-style: none;
+  color: var(--color-blogCardDate);
+}
+
+.contact-inner-wrapper ul a{
+  color: var(--color-blogCardDate);
+}
+/* Contact Page Styling Ends Here */
