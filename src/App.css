@@ -728,3 +728,15 @@ footer .input-group-text {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 /* Single Blog Page Styling Ends Here */
+
+
+
+/* Policy Page Styling */
+
+.policy-card{
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Policy Page Styling Ends Here */
