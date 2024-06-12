@@ -14,7 +14,7 @@ const Contact = () => {
       <div className="contact-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 frame">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13282.120705981388!2d72.98838231923436!3d33.6693335811065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95ff25ed8b53%3A0x7e482ec7e99bebe0!2sG-11%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1718096938955!5m2!1sen!2s" width="600" height="450" className='border-0 w-100' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div className="col-12 mt-5">

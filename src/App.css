@@ -55,6 +55,10 @@ a {
   gap: 15px
 }
 
+.gap-20{
+  gap: 20px;
+}
+
 .gap-30 {
   gap: 30px
 }
@@ -267,6 +271,7 @@ footer .input-group-text {
 .blog-card{
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .blog-card img{
@@ -316,6 +321,7 @@ footer .input-group-text {
   padding: 15px;
   overflow: hidden;
   width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-card .product-image{
@@ -417,6 +423,7 @@ footer .input-group-text {
   padding: 20px 10px;
   border-radius: 10px;
   background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Special Product Card Styling Ends Here */
@@ -461,6 +468,7 @@ footer .input-group-text {
   background-color: white;
   border-radius: 10px;
   padding: 10px 15px 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .filter-title{
@@ -525,6 +533,7 @@ footer .input-group-text {
   padding: 10px;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .grid img{
@@ -550,6 +559,7 @@ footer .input-group-text {
   border-radius: 15px;
   background-color: white;
   gap: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-inner-wrapper >div{
@@ -577,6 +587,7 @@ footer .input-group-text {
 .contact-inner-wrapper ul a{
   color: var(--color-blogCardDate);
 }
+
 /* Contact Page Styling Ends Here */
 
 
@@ -586,6 +597,7 @@ footer .input-group-text {
   padding: 20px 15px;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .compare-product-card .cross-div{
@@ -639,3 +651,34 @@ footer .input-group-text {
   margin-bottom: 10px;
 }
 /* Compare Product Page Styling Ends Here */
+
+
+
+
+/* Auth Card Styling */
+.auth-card{
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.show-hide{
+  cursor: pointer;
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #ced4da!important;
+}
+
+.show-hide:focus{
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.profile-pic{
+  color: var(--color-headerLowerStrip);
+}
+/* Auth Card Styling Ends Here */
