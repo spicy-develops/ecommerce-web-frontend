@@ -248,19 +248,19 @@ footer .input-group-text {
 .categories>div:nth-child(2),
 .categories>div:nth-child(3),
 .categories>div:nth-child(4){
-  border-bottom: 1px solid var(--color-homePageBanner2Borders);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .categories>div:nth-child(1),
 .categories>div:nth-child(2),
 .categories>div:nth-child(3){
-  border-right: 1px solid var(--color-homePageBanner2Borders);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .categories>div:nth-child(5),
 .categories>div:nth-child(6),
 .categories>div:nth-child(7) {
-  border-right: 1px solid var(--color-homePageBanner2Borders);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .marquee-wrapper{
@@ -531,9 +531,8 @@ footer .input-group-text {
 }
 
 .random-products:first-child{
-  border-bottom: 1px solid var(--color-homePageBanner2Borders);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .filter-sort-grid{
   padding: 10px;
   background-color: white;
@@ -754,7 +753,7 @@ footer .input-group-text {
 }
 
 .review-head{
-  border-bottom: 1px solid var(--color-homePageBanner2Borders);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 20px;
 }
 
@@ -763,7 +762,7 @@ footer .input-group-text {
   
 }
 
-.review-head p, .review-head a{
+.review-head p, .review-link{
   font-size: 14px;
   color: var(--color-blogCardDate);
 }
@@ -775,7 +774,7 @@ footer .input-group-text {
 }
 
 .review-form{
-  border-bottom: 1px solid var(--color-homePageBackground);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .review-form h4{
@@ -784,7 +783,7 @@ footer .input-group-text {
 }
 
 .review:not(:last-child){
-  border-bottom: 1px solid var(--color-homePageBackground);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .review p{
@@ -797,11 +796,10 @@ footer .input-group-text {
   color: var(--color-blogCardDate);
 }
 
-
-.product-images-inner-wrapper{
+.main-product-inner-wrapper{
   padding: 30px;
+  border-radius: 10px;
   background-color: white;
-
 }
 
 .main-product-image-wrapper{
@@ -816,5 +814,58 @@ footer .input-group-text {
   width: 47.3985%;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
+
+.boder-bottom{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product-main-detail h3{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px
+}
+
+.product-main-detail p.price{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.border-bottom a{
+  margin-bottom: 10px;
+}
+
+.product-data h3{
+font-size: 14px;
+}
+
+.product-data p{
+font-size: 13px;
+color: var(--color-blogCardDate);
+}
+
+.accordion-button{
+  height: 40px;
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  box-shadow: none;
+  background-color: inherit;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed):focus {
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  /* or your desired background color */
+  color: inherit;
+  /* Ensure the text color remains the same */
+}
+
+
 
 /* Main Product Page Styling Ends Here */
