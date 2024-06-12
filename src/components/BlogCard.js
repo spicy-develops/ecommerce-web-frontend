@@ -13,7 +13,7 @@ const BlogCard = (props) => {
                 <p className="date">June 2, 2024</p>
                 <h5 className="title">I am inserting a dummy title</h5>
                 <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut ipsa at fugiat nemo? Explicabo debitis voluptas obcaecati vitae a, doloremque provident, doloribus totam magnam atque ea. Eos, nemo! Porro!</p>
-                <Link to="/" className="button">Read More</Link>
+                <Link to="/blog/:id" className="button">Read More</Link>
             </div>
         </div>
     </div>

@@ -76,6 +76,11 @@ a {
   color: black;
 }
 
+.card-shadow{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
 /* Header Styling */
 .header-top-strip {
   border-bottom: 1px solid var(--color-headerTopStripBorder);
@@ -682,3 +687,44 @@ footer .input-group-text {
   color: var(--color-headerLowerStrip);
 }
 /* Auth Card Styling Ends Here */
+
+
+
+/* Single Blog Page Styling */
+
+.single-blog-card{
+  background-color: white;
+  border-radius: 15px;
+}
+
+.single-blog-card h3{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.single-blog-card p{
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-blogCardDate);
+}
+
+.single-blog-card a{
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--color-blogCardDate);
+}
+
+.single-blog-card img{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.blog-inner-wrapper {
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: white;
+  gap: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Single Blog Page Styling Ends Here */
