@@ -5,8 +5,42 @@ import compare from '../images/compare.svg'
 import wishlist from '../images/wishlist.svg'
 import user from '../images/user.svg'
 import cart from '../images/cart.svg'
+import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Initialize Bootstrap offcanvas
+    const offcanvasElement = document.getElementById('offcanvasRight');
+    const offcanvas = new window.bootstrap.Offcanvas(offcanvasElement);
+
+    // Handle hidden event to close offcanvas
+    offcanvasElement.addEventListener('hidden.bs.offcanvas', () => {
+      // You can perform any cleanup here if needed
+    });
+
+    return () => {
+      // Cleanup event listener
+      offcanvasElement.removeEventListener('hidden.bs.offcanvas', () => {
+        // Cleanup if needed
+      });
+    };
+  }, []);
+
+  const handleViewCartClick = () => {
+    navigate('/cart');
+    const offcanvasElement = document.getElementById('offcanvasRight');
+    const offcanvas = window.bootstrap.Offcanvas.getInstance(offcanvasElement);
+    offcanvas.hide(); // Manually hide the offcanvas after navigating
+  };
+  const handleViewCartCheckoutClick = () => {
+    navigate('/checkout');
+    const offcanvasElement = document.getElementById('offcanvasRight');
+    const offcanvas = window.bootstrap.Offcanvas.getInstance(offcanvasElement);
+    offcanvas.hide(); // Manually hide the offcanvas after navigating
+  };
   return (
     <>
       <header className="header-top-strip py-3">
@@ -65,8 +99,11 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className='d-flex align-items-center gap-10 text-white canvas' data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    <div className="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <Link className='d-flex align-items-center gap-10 text-white canvas'
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <div className="offcanvas offcanvas-end text-dark" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                       <div className="offcanvas-header">
                         <h5 id="offcanvasRightLabel">Cart</h5>
                         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -74,9 +111,9 @@ const Header = () => {
                       <div className="offcanvas-body">
                         <div className=".col-12">
                           <div className="d-flex flex-column">
-                            {/* INSERT  PRODUCT CART CARD HERE*/}
+                            {/* INSERT PRODUCT CART CARD HERE */}
                             <div className="div d-flex flex-column home-wrapper-2 card-shadow total-card p-3">
-                                <div className='d-flex align-items-center justify-content-between'>
+                              <div className='d-flex align-items-center justify-content-between'>
                                 <div className='d-flex flex-column'>
                                   <h5>Total Item:</h5>
                                   <p>1</p>
@@ -85,11 +122,11 @@ const Header = () => {
                                   <h5>Subtotal:</h5>
                                   <p>Rs. 6000</p>
                                 </div>
-                                </div>
-                                <div className='d-flex align-items-center justify-content-between'>
-                                <Link className="button" to='/cart'>View Cart</Link>
-                                <Link className="button">Checkout</Link>
-                                </div>
+                              </div>
+                              <div className='d-flex align-items-center justify-content-between'>
+                                <button className="button border-0" onClick={handleViewCartClick}>View Cart</button>
+                                <button className="button border-0" onClick={handleViewCartCheckoutClick}>Checkout</button>
+                              </div>
                             </div>
                           </div>
                         </div>
