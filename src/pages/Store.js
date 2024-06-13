@@ -180,7 +180,7 @@ const Store = () => {
                 </div>
               </div>
               <div className="product-list pb-5 d-flex gap-10 flex-wrap">
-                <ProductCard grid={grid}/>
+                <ProductCard grid={grid} />
                 <ProductCard grid={grid} />
                 <ProductCard grid={grid} />
                 <ProductCard grid={grid} />

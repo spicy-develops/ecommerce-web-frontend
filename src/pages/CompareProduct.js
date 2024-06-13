@@ -1,6 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Color from '../components/Color'
+import cross from '../images/cross.svg'
+import watch from '../images/watch.jpg'
 
 const CompareProduct = () => {
     return (
@@ -15,10 +17,10 @@ const CompareProduct = () => {
                         <div className="col-3">
                             <div className="compare-product-card position-relative">
                                 <div className='d-flex align-items-center cross-div position-absolute'>
-                                    <img src="images/cross.svg" alt="cross" className="cross img-fluid d-block" />
+                                    <img src={cross} alt="cross" className="cross img-fluid d-block" />
                                 </div>
                                 <div className="product-card-image">
-                                    <img src="images/watch.jpg" alt="compare product image" />
+                                    <img src={watch} alt="compare product image" />
                                 </div>
                                 <div className="compare-product-details">
                                     <h5 className="title">SAMSUNG GALAXY S24 ULTRA NIGGA EDITION</h5>
@@ -54,10 +56,10 @@ const CompareProduct = () => {
                         <div className="col-3">
                             <div className="compare-product-card position-relative">
                                 <div className='d-flex align-items-center cross-div position-absolute'>
-                                    <img src="images/cross.svg" alt="cross" className="cross img-fluid d-block" />
+                                    <img src={cross} alt="cross" className="cross img-fluid d-block" />
                                 </div>
                                 <div className="product-card-image">
-                                    <img src="images/watch.jpg" alt="compare product image" />
+                                    <img src={watch} alt="compare product image" />
                                 </div>
                                 <div className="compare-product-details">
                                     <h5 className="title">SAMSUNG GALAXY S24 ULTRA NIGGA EDITION</h5>

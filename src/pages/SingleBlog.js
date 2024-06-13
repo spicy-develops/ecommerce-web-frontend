@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import { HiOutlineArrowLeft } from 'react-icons/hi'
+import blog3 from '../images/blog-1.jpg'
 
 const SingleBlog = () => {
   return (
@@ -17,7 +18,7 @@ const SingleBlog = () => {
                         <div className="single-blog-card card-shadow p-4">
                             <Link to='/blogs' className='d-flex align-items-center gap-10 mb-3'> <HiOutlineArrowLeft /> Go back to Blogs</Link>
                             <h3 className="title">I am inserting a dummy title</h3>
-                            <img src="images/blog-3.webp img-fluid w-100 my-4" alt="blog" />
+                            <img src={blog3} className="img-fluid w-100 my-4" alt="blog" />
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt, nostrum quo, cupiditate laborum esse iusto recusandae laudantium veritatis est beatae dignissimos saepe harum optio. In blanditiis libero voluptatem corrupti.
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas odio animi ex tempore, praesentium maiores placeat eligendi voluptatem corporis dignissimos minus autem optio unde qui nulla suscipit! Eveniet, iusto sunt.

@@ -1,6 +1,11 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { BsSearch } from 'react-icons/bs'
+import compare from '../images/compare.svg'
+import wishlist from '../images/wishlist.svg'
+import user from '../images/user.svg'
+import cart from '../images/cart.svg'
+
 const Header = () => {
   return (
     <>
@@ -37,7 +42,7 @@ const Header = () => {
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
                   <Link className='d-flex align-items-center gap-10 text-white' to='/compare-product'>
-                    <img src="images/compare.svg" alt="compare" />
+                    <img src={compare} alt="compare" className='flip' />
                     <p className='mb-0'>
                       Compare <br /> Products
                     </p>
@@ -45,26 +50,55 @@ const Header = () => {
                 </div>
                 <div>
                   <Link to='/wishlist' className='d-flex align-items-center gap-10 text-white'>
-                    <img src="images/wishlist.svg" alt="wishlist" />
+                    <img src={wishlist} alt="wishlist" className='flip' />
                     <p className='mb-0'>
                       Favorite <br /> Wishlist
                     </p>
                   </Link>
                 </div>
                 <div>
-                  <Link to='/login'className='d-flex align-items-center gap-10 text-white'>
-                    <img src="images/user.svg" alt="yser" />
+                  <Link to='/login' className='d-flex align-items-center gap-10 text-white'>
+                    <img src={user} alt="yser" className='flip' />
                     <p className='mb-0'>
                       Log in <br /> My Account
                     </p>
                   </Link>
                 </div>
                 <div>
-                  <Link className='d-flex align-items-center gap-10 text-white'>
-                    <img src="images/cart.svg" alt="cart" />
+                  <Link className='d-flex align-items-center gap-10 text-white canvas' data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <div className="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div className="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Cart</h5>
+                        <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div className="offcanvas-body">
+                        <div className=".col-12">
+                          <div className="d-flex flex-column">
+                            {/* INSERT  PRODUCT CART CARD HERE*/}
+                            <div className="div d-flex flex-column home-wrapper-2 card-shadow total-card p-3">
+                                <div className='d-flex align-items-center justify-content-between'>
+                                <div className='d-flex flex-column'>
+                                  <h5>Total Item:</h5>
+                                  <p>1</p>
+                                </div>
+                                <div className='d-flex flex-column align-items-right'>
+                                  <h5>Subtotal:</h5>
+                                  <p>Rs. 6000</p>
+                                </div>
+                                </div>
+                                <div className='d-flex align-items-center justify-content-between'>
+                                <Link className="button" to='/cart'>View Cart</Link>
+                                <Link className="button">Checkout</Link>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img src={cart} alt="cart" className='flip' />
                     <div className='d-flex flex-column'>
-                      <span className="badge bg-white text-dark">0</span>
-                      <p className='mb-0'>$500</p>
+                      <span className="badge bg-white text-dark h">0</span>
+                      <p className='mb-0 h'>$500</p>
                     </div>
                   </Link>
                 </div>

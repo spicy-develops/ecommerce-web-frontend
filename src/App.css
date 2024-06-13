@@ -95,9 +95,27 @@ a {
   background-color: var(--color-searchIcon);
 }
 
-.header-upper-links img {
-  width: 35px;
-  height: 35px;
+  .header-upper-links img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.5s;
+  }
+
+  .flip:hover {
+    transform: scaleX(-1);
+    cursor: pointer;
+  }
+
+.canvas {
+  cursor: default !important;
+}
+
+.canvas .h:hover{
+  cursor: pointer;
+}
+
+.total-card{
+  border-radius: 10px;
 }
 
 .header-bottom {

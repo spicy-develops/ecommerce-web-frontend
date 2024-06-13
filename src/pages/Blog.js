@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import BlogCard from '../components/BlogCard'
 import ReactStars from "react-rating-stars-component";
 import { useState } from 'react'
+import watch from '../images/watch.jpg'
 const Blog =     () => {
     const [blogGrid, setGrid] = useState(6);
     return (
@@ -50,7 +51,7 @@ const Blog =     () => {
                                 </h3>
                                 <div>
                                     <div className="random-products d-flex align-items-center">
-                                        <div className="w-50"><img src="images/watch.jpg" className='img-fluid' alt="randomproductimage" /></div>
+                                        <div className="w-50"><img src={watch} className='img-fluid' alt="randomproductimage" /></div>
                                         <div className="w-50">
                                             <h5>Samsung Galaxy 24 Ultra Nigga Edition</h5>
                                             <ReactStars
@@ -64,7 +65,7 @@ const Blog =     () => {
                                         </div>
                                     </div>
                                     <div className="random-products d-flex align-items-center">
-                                        <div className="w-50"><img src="images/watch.jpg" className='img-fluid' alt="randomproductimage" /></div>
+                                        <div className="w-50"><img src={watch} className='img-fluid' alt="randomproductimage" /></div>
                                         <div className="w-50">
                                             <h5>Samsung Galaxy 24 Ultra Nigga Edition</h5>
                                             <ReactStars
